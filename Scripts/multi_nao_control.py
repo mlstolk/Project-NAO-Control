@@ -81,7 +81,7 @@ print '================ Posture Initialization ================'
 print 'Posture Initialization : StandZero'
 for i in range(0,nbrOfNao):
     motionProxy[i].stiffnessInterpolation('Body', 1.0, 1.0)
-    postureProxy[i].goToPosture('StandZero',1.0,1.0)
+    postureProxy[i].goToPosture('StandZero',1.0)
 
 print '================ Handle Creation for the new NAO ================'
 a=vrep.simxGetObjectGroupData(clientID,vrep.sim_object_joint_type,0,vrep.simx_opmode_oneshot_wait)
